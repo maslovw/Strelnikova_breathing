@@ -1,0 +1,43 @@
+# By default one exercise consists of
+# 96 inhales, which are divided by cycles
+# One cycle has 8 inhales, and then small pause
+
+sound:
+#   cyclic plays every inhale
+  cyclic: wav/meow_1.wav #wav/beep1.wav
+#  cyclic: wav/beep1.wav
+#   ending plays at the last inhale of the cycle
+  ending: wav/meow_3.wav #beep2.wav
+#  ending: wav/beep2.wav
+
+time:
+  between_inhale: 0.5
+#  between_inhale: 1.2
+  between_cycles: 4
+  between_exercise: 6
+
+# list of exercises:
+# - name: displayed name
+#     cycle: amount of inhales in one cycles
+#     all: amount of inhales in the exercise
+# parameters `cycle` and `all` will be stored for the
+# next exercise
+exercises:
+  - name:   palm
+    cycle:  8
+    all:    96
+  - name:   belt
+  - name:   pump
+    cycle:  16
+    all:    96
+  - name:   shoulders
+  - name:   pump&shoulders
+  - name:   cat
+    cycle:  32
+  - name:   head turn
+    all:    32
+  - name:   head tilt
+  - name:   head tilt (side)
+  - name:   steps forward
+    all:    96
+  - name:   steps backward
